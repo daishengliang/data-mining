@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
-"""
+"""PathSim algorithm for evaluating similarity of queries.
+
+This module takes a heterogeneous network and evaluate similarity
+of queries based on user-provided meta-paths.
+
+Example:
+
+    To run the code::
+    
+        $ python page_rank.py
+        
 @author: ShengliangDai
 """
 
