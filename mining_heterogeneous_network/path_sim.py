@@ -8,7 +8,7 @@ Example:
 
     To run the code::
 
-        $ python page_rank.py
+        $ python page_sim.py
 
 @author: ShengliangDai
 
