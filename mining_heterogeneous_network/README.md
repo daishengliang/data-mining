@@ -15,7 +15,9 @@ term.txt: contains all the non-stopword unigrams extracted from paper titles
 relation.txt, used to store the undirected relations between entities. First column contains an ID of paper, second column contains an ID of the other three types
 
 [Data Set (Homogeneous Version): APVPA_net, APTPA_net] These two files are the relation files of two compressed homogeneous network using meta-path: APVPA and APTPA, respectively. These networks are UNDIRECTED. Both network only contains the relation between authors. Please use these two networks for Personalized Page-Rank. 
-The goal is to evaluate similarity queries using three similarity measures: PathSim and Personalized Page-Rank.  The query input is a researcher's name (e.g., Jiawei Han), the output is the top-10 most similar researchers.
-Implementation tips can be found in hw1tips.pdf.
+
+The goal is to evaluate similarity of queries using three similarity measures: PathSim and Personalized Page-Rank.  The query input is a researcher's name (e.g., Jiawei Han), the output is the top-10 most similar researchers.
+
 Sub-Task 1. Output the top-10 ranked results (i.e., similar researchers) for two authors: "Christos Faloutsos" and "AnHai Doan", using PathSim and Personalized Page-Rank  as measures respectively, taking APVPA (author-paper-venue-paper-author) as meta-path 
+
 Sub-Task 2. Output the top-10 ranked results for two researchers: "Xifeng Yan" and "Jamie Callan", using PathSim and Personalized Page-Rank as measures respectively, but taking APTPA (author-paper-term-paper-author) as meta-path 
