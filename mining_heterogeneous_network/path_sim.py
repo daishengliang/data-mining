@@ -7,10 +7,11 @@ of queries based on user-provided meta-paths.
 Example:
 
     To run the code::
-    
+
         $ python page_rank.py
-        
+
 @author: ShengliangDai
+
 """
 
 import pprint
@@ -66,7 +67,7 @@ def convertToID(names):
     Returns:
         A dictionary mapping indices to strings.
 
-    """ 
+    """
     index = 0
     dic = {}
     for name in names:
