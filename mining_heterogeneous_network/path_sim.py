@@ -13,9 +13,14 @@ Example:
 @author: ShengliangDai
 """
 
+import pprint
 import pandas as pd
 import numpy as np
-import pprint
+
+# pylint: disable=invalid-name
+# pylint: disable=no-member
+# pylint: disable=redefined-outer-name
+
 dblp = './dblp_4area/'
 author = pd.read_table(dblp + 'author.txt',
                        header=None).rename(columns={0: 'id', 1: 'name'})
@@ -30,6 +35,15 @@ venue = pd.read_table(dblp + 'venue.txt',
 
 
 def convertToIndex(names):
+    """Convert strings to indices.
+
+    Args:
+        names: A list of strings.
+
+    Returns:
+        A dictionary mapping strings to indices.
+
+    """
     index = 0
     dic = {}
     for name in names:
@@ -44,6 +58,15 @@ paperIndex = convertToIndex(np.unique(paper.id))
 
 
 def convertToID(names):
+    """Convert indices to strings.
+
+    Args:
+        names: A list of strings.
+
+    Returns:
+        A dictionary mapping indices to strings.
+
+    """ 
     index = 0
     dic = {}
     for name in names:
@@ -127,6 +150,16 @@ AuthorTerm = buildATMatrix(relation)
 
 
 def pathSim(adjMatrix, query):
+    """PathSim algorithm.
+
+    Args:
+        adjMatrix: An adjacency matrix for authors.
+        query: The name of one author.
+
+    Returns:
+        The similarity score between this author and other authors.
+
+    """
     authorMatrix = author.values
     for i in range(len(author)):
         if authorMatrix[i][1] == query:
