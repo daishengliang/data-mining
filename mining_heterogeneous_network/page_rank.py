@@ -110,7 +110,7 @@ def pageRank(adjMatrix, query):
     """PageRank algorithm.
 
     Args:
-        adjMatrix: An adjacency matrix for authors..
+        adjMatrix: An adjacency matrix for authors.
         query: The name of one author.
 
     Returns:
