@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """PageRank algorithm for evaluating similarity of queries.
 
-This module take a heterogeneous network and evaluate similarity
+This module takes a heterogeneous network and evaluate similarity
 of queries based on user-provided meta-paths.
 
 
